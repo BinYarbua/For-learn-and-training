@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ch 3An animated card fan effect</title>
+		<style >
+			#cardfan,#cardfan img{
+				width: 350px;
+				height: 300px;
+				transition:0.6s transform ease-out;
+			}
+			#cardfan{
+				margin:100px auto;
+			}
+			#cardfan img{
+				border:20px solid #ffe;
+				box-shadow: 12px 12px 10px rgba(0,0,0,.2);
+				position: absolute;
+				transform-origin:center 1200px;
+			}
+			#cardfan:hover img:first-child{
+				transform:rotate(24deg);
+			}
+			#cardfan:hover img:last-child{
+				transform:rotate(-24deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="cardfan">
+			<img src="img1.jpg" alt="..">
+			<img src="img2.jpg" alt="..">
+			<img src="img3.jpg" alt="..">
+		</div>
+		
+	</body>
+</html>

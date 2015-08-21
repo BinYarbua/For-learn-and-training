@@ -1,0 +1,109 @@
+.vidContainer{
+	width: 100%    !important;
+ 	height: auto   !important;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #000;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;		
+	background: -moz-linear-gradient(1deg, #F3F4F5 0, #dadada 100%);/* FF3.6+ */
+	background: -webkit-gradient(linear, 1deg, color-stop(0, F3F4F5), color-stop(100%, dadada));/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(1deg, #F3F4F5 0, #dadada 100%);/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(1deg, #F3F4F5 0, #dadada 100%);/* Opera 11.10+ */
+	background: -ms-linear-gradient(1deg, #F3F4F5 0, #dadada 100%);/* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); /* for IE */
+	background: linear-gradient(1deg, #F3F4F5 0, #dadada 100%);/* W3C */
+}
+video#videoPlayer{
+	display: block;
+	min-width:100%;
+	height: 210px;
+	-webkit-object-fit: fill;
+	-moz-object-fit: cover;
+	-ms-object-fit: fill;
+	-o-object-fit: fill;
+	object-fit: fill;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+nav#vidControls{
+	margin: 5px;
+	max-width: 100%;
+	color: #72d0f4;	
+	padding: 5px;
+}
+#timer{
+	display: block;
+	color: black;
+	text-align: center;
+	height: 28px;
+	padding: 1px;
+	margin: 2px;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+#playPauseBtn{
+	display: block;
+	text-align: center;
+	padding-right: 12px;
+	padding-left: 9px;
+	padding-right: 12px;
+	cursor: pointer;
+}
+#playPauseBtn:hover,#volumeIcon:hover{
+	color: #21b3eb;
+}
+#volumeIcon{
+	display: block;
+	padding-left: 4px;
+}
+#volumeBar{
+	float: left;
+}
+#volumeBarContainer{
+	position: relative;
+	display: block;
+	color: #515155;
+	background-color: #515155;
+	height: 4px;
+	width: 32px;
+	padding: 2px;
+	margin: 8px;
+	border-radius: 10px;
+}
+.volumeBar{
+	position: absolute;
+	width: 0px;
+	height: 4px;
+	background-color: #72d0f4;
+}
+#scurbberContainer{
+	position: relative;
+	display: block;
+	color: #515155;
+	background-color: #515155;
+	height: 4px;
+	width: 450px;
+	padding: 2px;
+	margin: 8px;
+	border-radius: 10px;
+}
+#scrubberBar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:0px;
+	height: 4px;
+	background-color: #72d0f4;
+}
+#fullScreen{
+	margin-left: 15px;
+	margin-right: 15px;
+}

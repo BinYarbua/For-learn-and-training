@@ -1,0 +1,207 @@
+/*
+=======================================
+start miscellaneous
+=======================================
+*/
+a{
+	color: #fafaf2;
+	text-decoration: none;
+}
+a:hover{
+	color: #f5b471;
+}
+a.active{
+	color:#f5b471; 
+}
+
+/*
+=======================================
+start header
+=======================================
+*/
+.page_header{
+	width:100%;
+	padding: 36px 0;
+	border-bottom: 1px solid #fafaf2;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPElEQVQYV2PcZKTv43fu4hYGAoARJE+MYrBCYhTDFRJSjKIQn2IMhbgUY1WITTFOheiK8SpEVkxQIUwxAK+eJWqh7q95AAAAAElFTkSuQmCC) repeat;
+	background-color: #992826;
+}
+header.container_12{
+	position: relative;
+	overflow: hidden;
+}
+header h1{
+	text-indent: -9990000px;
+	float: left;
+}
+header h1 a{
+	background: url(../img/logo.png) no-repeat;
+	width: 245px;
+	height: 80px;
+	float: left;
+}
+header ul.second_nav{
+	float: right;
+
+}
+header ul.second_nav li{
+	display: inline;
+
+}
+header nav{
+	display: block;
+	position: absolute;
+	top: 40px;
+	right: 0;
+	float: right;
+
+}
+header nav ul li {
+	display: inline;
+	float: left;
+}
+header nav ul li a{
+	font-size: 29px;
+	line-height: 18px;
+}
+header nav ul li h6.heading{
+	color: #fafaf2;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 17px;
+}
+
+.page_content{
+	border-top: 4px solid #992826;
+}
+/*
+=======================================
+start banner
+=======================================
+*/
+.banner{
+	margin-top: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.caption{
+	width: 230px;
+	height: 390px;
+	float: left;
+	color: #fff;
+	padding: 40px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPUlEQVQYV2MUFRX9//r1a0YGAgCsgBjFcJMIKUaxEp9iDLfhUozVE9gU4/QtumK8wYKsmGD4wRQTVAgLZwCoriVJ+W+w1gAAAABJRU5ErkJggg==) repeat;
+	background-color: #343434;
+}
+.caption h1{
+	font-size: 47px;
+	line-height: 55px;
+}
+.caption h1 strong{
+	font-size: 77px;
+	line-height: 17px;
+}
+.caption h1 span {
+	font-size: 30px;
+
+}
+.banner img{
+	width: 630px;
+	height: 470px;
+	float: right;
+
+}
+
+/*
+=======================================
+start thumb
+=======================================
+*/
+#thumb{
+	margin-top: 40px;
+}
+#thumb .placeholder{
+	position: relative;
+	width: 230px;
+	margin-bottom: 41px;
+	padding: 15px 35px 45px;
+	color: #fff;
+}
+#thumb .placeholder h2{
+	font-size: 32px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+#thumb .placeholder p{
+	font-size: 12px;
+	margin-top: 22px;
+}
+#thumb .placeholder a{
+	width: 220px;
+	color: #f5b471;
+	font-size: 21px; 
+	padding:5px 40px 20px 40px;
+	background-color:rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#thumb .placeholder a:hover{
+	color: #fff;
+}
+#thumb .placeholder:nth-child(1){
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPUlEQVQYV2O042L7f+jbL0YGAgCsgBjFcJMIKUaxEp9iDLfhUozVE9gU4/QtumK8wYKsmGD4wRQTVAgLZwCrLyVYqsaxPwAAAABJRU5ErkJggg==) repeat;
+	background-color: #4a0d07;
+}
+#thumb .placeholder:nth-child(2){
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPUlEQVQYV2PMF+P9P/HVZ0YGAgCsgBjFcJMIKUaxEp9iDLfhUozVE9gU4/QtumK8wYKsmGD4wRQTVAgLZwC1tSWczcCwzQAAAABJRU5ErkJggg==)repeat;
+	background-color: #881a0f;
+}
+#thumb .placeholder:nth-child(3){
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPElEQVQYV2PcX2Pj49hyZAsDAcAIkidGMVghMYrhCgkpRlGITzGGQlyKsSrEphinQnTFeBUiKyaoEKYYAL7aJc7q5/r+AAAAAElFTkSuQmCC) repeat;
+	background-color: #dc9148;
+}
+/*
+=======================================
+start info
+=======================================
+*/
+#info .placeholder{
+	height: 510px;
+	color: #550e08;
+	font-size: 12px !important ; 
+	padding-top: 25px;
+	border-top: 1px dashed #a61b0f;
+}
+#info .placeholder h1{
+	color: #550e08;
+	font-size: 37px;
+	font-weight: normal;
+	margin-top: 0;
+}
+.first-p{
+	color: #a61b0f;
+	font-size: 17px;
+	line-height: 24px;
+}
+#info .placeholder a{
+	color: #fff;
+	font-size: 14px;
+	padding: 7px ;
+	background-color: #550e08;
+}
+#info .placeholder a:hover{
+	color: #f5b471;
+}
+/*
+=======================================
+start page_footer
+=======================================
+*/
+#page_footer{
+	color: #550e08;
+	font-size: 13px;
+	line-height: 13px;
+	padding-top: 30px;
+	border-top: 1px dashed #a61b0f;
+}

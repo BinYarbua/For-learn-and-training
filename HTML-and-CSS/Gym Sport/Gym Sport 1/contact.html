@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gym Sport | Contact</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var loc=new google.maps.LatLng(21.543333,39.172778);
+			function initialize() {
+				var mapProp = {
+					center:loc,
+					zoom:11,
+					scrollwheel: false,
+					navigationControl: false,
+					mapTypeControl: false,
+					scaleControl: false,
+					draggable: false,
+					mapTypeId:google.maps.MapTypeId.ROADMAP
+				};
+				var map=new google.maps.Map(document.getElementById("map"),mapProp);
+				var marker=new google.maps.Marker({
+					position:loc,
+					icon:"img/marker.png",
+					animation:google.maps.Animation.BOUNCE //animate the marker with the animation property
+				});
+
+				marker.setMap(map);
+				google.maps.event.addListener(marker,'click',function() {
+				  map.setZoom(15);
+				  map.setCenter(marker.getPosition());
+				  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</head>
+	<body>
+		<header>
+			<!-- End top page slide -->
+			<div id="social-networks" class="container-fluid">
+				<div class="container">
+					<p><i class="fa fa-phone"></i> <a href="tel:18475555555">1-900-342-9876</a></p>
+					<ul class="list-inline">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-rss"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- main navbar  -->
+			<div id="nav-header">
+				<div class="container">
+					<nav class="navbar" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<h1><a class="navbar-brand text-hide" href="index.html">GYM</a></h1>
+						</div>
+					
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="timetable.html">Trainers</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Classes <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="cardoi-fitness.html">Cardio Fitness</a></li>
+										<li><a href="pilates.html">pilates</a></li>
+										<li><a href="aerobics">Aerobics</a></li>
+									</ul>
+								</li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="pricing.html">Pricing</a></li>
+								<li><a href="contact.html" class="active">Contant</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+				</div><!-- End container -->
+			</div>
+			<div id="map-contact" class="container-fluid">
+				<!-- Map Placeholder -->
+				<div id="map">
+				</div>
+				<!-- longitude and latitude -->
+				<div id="lat">
+				</div>
+
+				<div id="long">
+				</div>
+				<a href="#" class="btn text-uppercase">Contact</a>
+			</div>
+		</header>
+		<section id="contact" class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="contact-form col-sm-7">
+						<h5 class="text-uppercase">Send Us a Message</h5>
+						<p>We are an independent gym that is coomitted to working with you to a gian the results you.</p>
+						<div class="row">
+							<div class=" col-xs-12 col-sm-8">
+								<div class="row">
+									<div class="name col-xs-12 col-sm-6">
+										<input type="text" placeholder="your name" name="name">
+									</div>
+
+									<div class="name col-xs-12 col-sm-6">
+										<input type="eamil" placeholder="your Address" name="email">
+									</div>
+								</div>
+								<textarea class="col-xs-12" rows="4">Text here</textarea>
+							</div>
+							<div class="col-sm-4">
+								<input type="text" placeholder="Subject" name="subject">
+								<input type="submit" value="Submit your messge">
+								<p>Make sure you put a valid email</p>
+							</div>
+						</div>
+					</div>
+					<div class="contact-info col-sm-5">
+						<h5 class="text-uppercase">Contact info</h5>
+						<p>Ut volutpat consectetur aliquam. Curabitur auctor in nis ulum ornare. Sed consequat, augue condimentum fermentum gravida, metus elit vehicula dui.</p>
+						<p> <i class="fa fa-mobile"></i> +1-900-342-9876</p>
+						<p> <i class="fa fa-envelope-o"></i> info@gymsports.com</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="infor" class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="opening-hours">
+						<h2 class="text-capitalize">Opening <strong>Hours</strong></h2>
+						<table class="table-condensed">
+							<tr>
+								<td class="text-capitalize"><i class="fa fa-calendar-o"></i> Monday</td>
+								<td>h. 6:00-h. 24:00</td>
+							</tr>
+							<tr>
+								<td class="text-capitalize"><i class="fa fa-calendar-o"></i> Tusedday</td>
+								<td>h. 6:00-h. 24:00</td>
+							</tr>
+							<tr>
+								<td class="text-capitalize"><i class="fa fa-calendar-o"></i> Wednesday</td>
+								<td>h. 6:00-h. 24:00</td>
+							</tr>
+							<tr>
+								<td class="text-capitalize"><i class="fa fa-calendar-o"></i> Thursday</td>
+								<td>h. 6:00-h. 24:00</td>
+							</tr>
+							<tr>
+								<td class="text-capitalize"><i class="fa fa-calendar-o"></i> Friday</td>
+								<td>h. 6:00-h. 24:00</td>
+							</tr>
+							<tr>
+								<td class="text-capitalize"><i class="fa fa-calendar-o"></i> Saturday</td>
+								<td>h. 6:00-h. 24:00</td>
+							</tr>
+							<tr>
+								<td class="text-capitalize"><i class="fa fa-calendar-o"></i> Sunday</td>
+								<td>h. 6:00-h. 24:00</td>
+							</tr>
+						</table>
+						<p>Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit.</p>
+						<h2>Enjoy it!</h2>
+					</div><!-- End of open hours -->
+				</div>
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="next-event col-sm-6">
+							<h2 class="text-center text-uppercase">Next Event</h2>
+							<div class="box-event">
+								<div class="media">
+									<div class="media-left">
+										<p>26 Gen, 2014</p>
+										<img src="img/event.png" alt="...">
+									</div>
+									<div class="media-body">
+										<small>h.12.00 - h.13.00</small>
+										<h4 class="media-heading">AEROBICS</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+										<p><a href="#" class="btn text-uppercase">Booking</a></p>
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left">
+										<p>26 Gen, 2014</p>
+										<img src="img/event.png" alt="...">
+									</div>
+									<div class="media-body">
+										<small>h.12.00 - h.13.00</small>
+										<h4 class="media-heading">AEROBICS</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+										<p><a href="#" class="btn text-uppercase">Booking</a></p>
+									</div>
+								</div>
+							</div>
+						</div><!-- End Of Next event -->
+						<div class="blog col-sm-6">
+							<h2 class="text-center text-uppercase">From The Blog</h2>
+							<div class="box-blog">
+								<div class="media">
+									<div class="media-left">
+										<a href="single-blog.html"><img src="img/blog.png" alt=".." class="img-rounded"></a>
+									</div>
+									<div class="media-body">
+										<a href="single-blog.html"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></a>
+										<p><time>6 May, 2013</time></p>
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left">
+										<a href="single-blog.html"><img src="img/blog.png" alt=".." class="img-rounded"></a>
+									</div>
+									<div class="media-body">
+										<a href="single-blog.html"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></a>
+										<p><time>6 May, 2013</time></p>
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left">
+										<a href="single-blog.html"><img src="img/blog.png" alt=".." class="img-rounded"></a>
+									</div>
+									<div class="media-body">
+										<a href="single-blog.html"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></a>
+										<p><time>6 May, 2013</time></p>
+									</div>
+								</div>
+							</div>
+						</div><!-- End Of blog -->
+						<div class=" col-sm-12">
+							<div class="join-today clearfix">
+								<div class="warper">
+									<h2 class="pull-left">Why Join?</h2>
+									<h3 class="pull-left clearfix">This is an awesome subhead</h3>
+									<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium.Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
+								</div>
+								<a href="#" class="btn join">Join Today</a>
+							</div><!-- End join-today -->
+						</div>
+					</div><!-- End of row -->
+				</div>
+			</div><!-- End of row -->
+		</section>
+		<section id="gallrey" class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="gallrey col-sm-12 col-md-8">
+						<h2 class="text-center text-uppercase">Gallery</h2>
+				  		<div id="box-gallrey" class="carousel slide" data-ride="carousel">
+				  	    	<ol class="carousel-indicators">
+				  	        	<li data-target="#box-gallrey" data-slide-to="0" class=""></li>
+				  	        	<li data-target="#box-gallrey" data-slide-to="1" class=""></li>
+				  	        	<li data-target="#box-gallrey" data-slide-to="2" class="active"></li>
+				  	    	</ol>
+				  	    <div class="carousel-inner">
+				  	        <div class="item">
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-3.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+				  	        	</div>
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-2.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+				  	        	</div>
+				  	        </div>
+				  	        <div class="item">
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-3.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+				  	        	</div>
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-2.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+				  	        	</div>
+				  	        </div>
+				  	        <div class="item active">
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-3.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+				  	        	</div>
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-2.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+				  	        	</div>
+				  	        </div>
+				  	    </div>
+				  	    <a class="left carousel-control" href="#box-gallrey" data-slide="prev">
+				  	    	<i class="fa fa-chevron-right icon-prev"></i>
+				  	    </a>
+				  	    <a class="right carousel-control" href="#box-gallrey" data-slide="next">
+				  	    	<i class="fa fa-chevron-right icon-next"></i>
+				  	    </a>
+				  	</div>
+					</div><!-- end of gallrey -->
+					<div class="partner col-sm-12 col-md-4">
+						<h2 class="text-center text-uppercase">Partner</h2>
+						<div class="box-partner">
+							<ul >
+								<li><a href="#"><span class="speedo"></span></a></li>
+								<li><a href="#"><span class="nike"></span></a></li>
+								<li><a href="#"><span class="puma"></span></a></li>
+								<li><a href="#"><span class="jaked"></span></a></li>
+								<li><a href="#"><span class="reebok"></span></a></li>
+								<li><a href="#"><span class="adidas"></span></a></li>
+							</ul>
+						</div>
+					</div><!-- end of partner -->
+				</div><!-- End 0f row -->
+			</div>
+		</section>
+		
+		<section class="container">
+			<div class="twitter-box">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><i class="fa fa-twitter fa-5x"></i></a>
+					</div>
+					<div class="media-body">
+						<p>
+							RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups.today may be big friends later. (9/10)  <u>2 days ago</u>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--start footer of page -->
+		<footer>
+			<!--  start top footer -->
+			<div class="top-footer container-fliud">
+				<div class="container contact">
+					<div class="row">
+						<div class="newsletter col-sm-6 col-md-4 clearfix">
+							<h4 class="text-uppercase">Newsletter signUP</h4>
+							<p class="text-uppercase">Sign up for our newsletter and get the latest news.</p>
+							<input type="email" placeholder="Insert Email">
+							<a href="#">Submit Email</a>
+						</div>
+						<div class="contact-info col-sm-6 col-md-4 clearfix">
+							<h1 class="clearfix"><a class="navbar-brand text-hide" href="#">GYM</a></h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p>
+							<p>phone: <strong>1-900-342-9867</strong></p>
+							<p>e-mail: <strong>info@gymsoprt.com</strong></p>
+						</div>
+						<div class="menu col-sm-6 col-md-2 clearfix">
+							<h4 class="text-uppercase">Menu</h4>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Trainers</a></li>
+								<li><a href="#">Classes</a></li>
+								<li><a href="#">Princing</a></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Contant</a></li>
+							</ul>
+						</div>
+						<div class="community col-sm-6 col-md-2 clearfix">
+							<h4 class="text-uppercase">community </h4>
+							<ul>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Forum</a></li>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Newsletter</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end top footer -->
+			<!-- start bottom footer -->
+			<div class="bottom-footer container-fliud">
+				<div class="container">
+					<p>&copy; 2013  GYMSports</p>
+					<ul class="list-inline">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-rss"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- end bottom footer -->
+		</footer>
+		<!-- End footer of page -->
+
+		<!-- jQuery -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

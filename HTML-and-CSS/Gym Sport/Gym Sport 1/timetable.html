@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>TimeTable</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<!-- End top page slide -->
+			<div id="social-networks" class="container-fluid">
+				<div class="container">
+					<p><i class="fa fa-phone"></i> <a href="tel:18475555555">1-900-342-9876</a></p>
+					<ul class="list-inline">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-rss"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- main navbar  -->
+			<div id="nav-header">
+				<div class="container">
+					<nav class="navbar" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<h1><a class="navbar-brand text-hide" href="index.html">GYM</a></h1>
+						</div>
+					
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html" >Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="timetable.html" class="active">Trainers</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Classes <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="cardoi-fitness.html">Cardio Fitness</a></li>
+										<li><a href="pilates.html">pilates</a></li>
+										<li><a href="aerobics">Aerobics</a></li>
+									</ul>
+								</li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="pricing.html">Pricing</a></li>
+								<li><a href="contact.html">Contant</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+				</div><!-- End container -->
+			</div>
+			<div id="big-image" class="container-fluid">
+				<img src="img/blog-3.jpg" alt="..">
+				<a href="#" class="btn text-uppercase">TimeTable</a>
+			</div>
+		</header>
+		<section class="timetable">
+			<div class="container" role="tabpanel">
+				<!-- tab menu -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#all" aria-controls="all" role="tab" data-toggle="tab">all</a>
+					</li>
+					<li role="presentation">
+						<a href="#aerobics" aria-controls="aerobics" role="tab" data-toggle="tab">Aerobics</a>
+					</li>
+					<li role="presentation">
+						<a href="#crossfit" aria-controls="development" role="tab" data-toggle="tab">Crossfit</a>
+					</li>
+					<li role="presentation">
+						<a href="#boxing" aria-controls="interface" role="tab" data-toggle="tab">Boxing</a>
+					</li>
+					<li role="presentation">
+						<a href="#kik-boxing" aria-controls="logo" role="tab" data-toggle="tab">Kik Boxing</a>
+					</li>
+					<li role="presentation">
+						<a href="#pilates" aria-controls="logo" role="tab" data-toggle="tab">Pilates</a>
+					</li>
+					<li role="presentation">
+						<a href="#spinning" aria-controls="logo" role="tab" data-toggle="tab">Spinning</a>
+					</li>
+				</ul>
+				<!-- start timetable -->
+				<table class="table table-responsive">
+					<tr>
+						<th></th>
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+						<th>Saturday</th>
+						<th>Sunday</th>
+					</tr>
+					<tr>
+						<th>6:00 - 7:00</th>
+
+						<td class="aerobics">Aerobics -Room A</td>
+						<td class="pilates">Pilates-Room D</td>
+						<td class="aerobics">Aerobics -Room A</td>
+						<td class="pilates">Pilates-Room D</td>
+						<td class="aerobics">Aerobics -Room A</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>7:00 - 8:00</th>
+
+						<td class="kik-boxing">Kik Boxing - Room B</td>
+						<td class="crossfit">Crossfig - Room B</td>
+						<td></td>
+						<td class="kik-boxing">Kik Boxing - Room B</td>
+						<td class="spinning">Spinning -Room D</td>
+						<td class="crossfit">Crossfit - Room B</td>
+						<td class="kik-boxing">Kik Boxing - Room B</td>
+					</tr>
+					<tr>
+						<th>8:00 - 9:00</th>
+
+						<td class="boxing">Boxing - Room C</td>
+						<td class="spinning">Spinning -Room D</td>
+						<td class="boxing">Boxing - Room C</td>
+						<td class="spinning">Spinning -Room D</td>
+						<td></td>
+						<td class="spinning">Spinning -Room D</td>
+						<td class="boxing">Boxing - Room C</td>
+					</tr>
+					<tr>
+						<th>9:00 - 10:00</th>
+
+						<td class="pilates">Pilates - Room D</td>
+						<td class="crossfit">Crossfit - Room B</td>
+						<td></td>
+						<td class="spinning">Spinning -Room D</td>
+						<td></td>
+						<td class="spinning">Spinning -Room D</td>
+						<td class="pilates">Pilates - Room D</td>			
+					</tr>
+					<tr>
+						<th>10:00 - 11:00</th>
+
+						<td class="pilates">Pilates - Room D</td>
+						<td class="crossfit">Crossfit - Room B</td>
+						<td></td>
+						<td class="spinning">Spinning -Room D</td>
+						<td></td>
+						<td class="spinning">Spinning -Room D</td>
+						<td class="pilates">Pilates - Room D</td>	
+					</tr>
+					<tr>
+						<th>11:00 - 12:00</th>
+						
+						<td class="boxing">Boxing - Room C</td>
+						<td class="pilates">Pilates - Room D</td>
+						<td class="boxing">Boxing - Room C</td>
+						<td class="pilates">Pilates - Room D</td>
+						<td></td>
+						<td class="crossfit">Crossfit - Room B</td>
+						<td class="aerobics">Aerobics -Room A</td>
+					</tr>
+					<tr>
+						<th>12:00 - 13:00</th>
+
+						<td></td>
+						<td class="crossfit">Crossfit - Room B</td>
+						<td></td>
+						<td class="kik-boxing">Kik Boxing -Room A</td>
+						<td class="spinning">Spinning -Room D</td>
+						<td></td>
+						<td class="aerobics">Aerobics -Room A</td>
+					</tr>
+					<tr>
+						<th>13:00 - 14:00</th>
+
+						<td class="kik-boxing">Kik Boxing -Room A</td>
+						<td></td>
+						<td class="aerobics">Aerobics -Room A</td>
+						<td class="spinning">Spinning - Room D</td>
+						<td class="aerobics">Aerobics -Room A</td>
+						<td class="spinning">Spinning -Room D</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>14:00 - 15:00</th>
+
+						<td class="aerobics">Aerobics -Room A</td>
+						<td></td>
+						<td class="aerobics">Aerobics -Room A</td>
+						<td class="spinning">Spinning -Room D</td>
+						<td class="aerobics">Aerobics -Room A</td>
+						<td class="spinning">Spinning -Room D</td>
+						<td></td>
+						
+					</tr>
+					<tr>
+						<th>15:00 - 16:00</th>
+
+						<td class="aerobics">Aerobics -Room A</td>
+						<td></td>
+						<td class="aerobics">Aerobics -Room A</td>
+						<td class="crossfit">Crossfit - Room B</td>
+						<td class="aerobics">Aerobics -Room A</td>
+						<td></td>
+						<td class="spinning">Spinning -Room D</td>
+					</tr>
+					<tr>
+						<th>16:00 - 17:00</th>
+
+						<td class="aerobics">Aerobics -Room A</td>
+						<td></td>
+						<td class="aerobics">Aerobics -Room A</td>
+						<td class="crossfit">Crossfit - Room B</td>
+						<td class="aerobics">Aerobics -Room A</td>
+						<td></td>
+						<td class="spinning">Spinning -Room D</td>
+					</tr>
+				</table>
+				<!-- end timetable -->
+			</div>
+		</section>
+		<section class="container">
+			<div class="row">
+				<!-- start our trainers -->
+				<div class="our-trainers col-sm-6 col-md-4">
+					<h2 class="text-center text-uppercase">Our Trainers</h2>
+					<div id="box-trainers" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="trainer-white cleafix">
+									<div class="row">
+										<div class=" basic-info col-xs-6">
+											<img src="img/trainer1.png" alt="..." class="img-circle">
+											<h4 class="text-uppercase">REBECCA SMITH</h4>
+											<h6 class="trainer-type text-uppercase">SPINNING</h6>
+											<p>Creating the perfect body is no small matter. </p>
+											<ul class="list-inline pull-left">
+												<li class="heart"><a href="#"><i class="fa fa-heart"></i></a></li>
+												<li class="like"><a href="#"><i class="fa fa-thumbs-o-up"></i></a></li>
+											</ul>
+											<ul class="list-inline pull-right">
+												<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											</ul>
+										</div>
+										<div class=" basic-info col-xs-6">
+											<img src="img/trainer1.png" alt="..." class="img-circle">
+											<h4 class="text-uppercase">REBECCA SMITH</h4>
+											<h6 class="trainer-type text-uppercase">SPINNING</h6>
+											<p>Creating the perfect body is no small matter. </p>
+											<ul class="list-inline pull-left">
+												<li class="heart"><a href="#"><i class="fa fa-heart"></i></a></li>
+												<li class="like"><a href="#"><i class="fa fa-thumbs-o-up"></i></a></li>
+											</ul>
+											<ul class="list-inline pull-right">
+												<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											</ul>
+										</div>
+									</div>	
+								</div><!-- End of trainer -->
+							</div>
+							<div class="item ">
+								<div class="trainer-white cleafix">
+									<div class="row">
+										<div class=" basic-info col-xs-6">
+											<img src="img/trainer1.png" alt="..." class="img-circle">
+											<h4 class="text-uppercase">REBECCA SMITH</h4>
+											<h6 class="trainer-type text-uppercase">SPINNING</h6>
+											<p>Creating the perfect body is no small matter. </p>
+											<ul class="list-inline pull-left">
+												<li class="heart"><a href="#"><i class="fa fa-heart"></i></a></li>
+												<li class="like"><a href="#"><i class="fa fa-thumbs-o-up"></i></a></li>
+											</ul>
+											<ul class="list-inline pull-right">
+												<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											</ul>
+										</div>
+										<div class=" basic-info col-xs-6">
+											<img src="img/trainer1.png" alt="..." class="img-circle">
+											<h4 class="text-uppercase">REBECCA SMITH</h4>
+											<h6 class="trainer-type text-uppercase">SPINNING</h6>
+											<p>Creating the perfect body is no small matter. </p>
+											<ul class="list-inline pull-left">
+												<li class="heart"><a href="#"><i class="fa fa-heart"></i></a></li>
+												<li class="like"><a href="#"><i class="fa fa-thumbs-o-up"></i></a></li>
+											</ul>
+											<ul class="list-inline pull-right">
+												<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											</ul>
+										</div>
+									</div>	
+								</div><!-- End of trainer -->
+							</div>
+							<div class="item">
+								<div class="trainer-white cleafix">
+									<div class="row">
+										<div class=" basic-info col-xs-6">
+											<img src="img/trainer1.png" alt="..." class="img-circle">
+											<h4 class="text-uppercase">REBECCA SMITH</h4>
+											<h6 class="trainer-type text-uppercase">SPINNING</h6>
+											<p>Creating the perfect body is no small matter. </p>
+											<ul class="list-inline pull-left">
+												<li class="heart"><a href="#"><i class="fa fa-heart"></i></a></li>
+												<li class="like"><a href="#"><i class="fa fa-thumbs-o-up"></i></a></li>
+											</ul>
+											<ul class="list-inline pull-right">
+												<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											</ul>
+										</div>
+										<div class=" basic-info col-xs-6">
+											<img src="img/trainer1.png" alt="..." class="img-circle">
+											<h4 class="text-uppercase">REBECCA SMITH</h4>
+											<h6 class="trainer-type text-uppercase">SPINNING</h6>
+											<p>Creating the perfect body is no small matter. </p>
+											<ul class="list-inline pull-left">
+												<li class="heart"><a href="#"><i class="fa fa-heart"></i></a></li>
+												<li class="like"><a href="#"><i class="fa fa-thumbs-o-up"></i></a></li>
+											</ul>
+											<ul class="list-inline pull-right">
+												<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											</ul>
+										</div>
+									</div>	
+								</div><!-- End of trainer -->
+							</div>
+						</div>
+						<a class="left carousel-control" href="#box-trainers" data-slide="prev">
+							<i class="fa fa-chevron-left fa-2x icon-prev"></i>
+						</a>
+						<a class="right carousel-control" href="#box-trainers" data-slide="next">
+							<i class="fa fa-chevron-right fa-2x icon-next"></i>
+						</a>
+					</div>
+				</div> 
+				<!-- End Of our Trainers -->
+
+				<!-- start next event -->
+				<div class="next-event col-sm-6 col-md-4">
+					<h2 class="text-center text-uppercase">Next Event</h2>
+					<div class="box-event">
+						<div class="media">
+							<div class="media-left">
+								<p>26 Gen, 2014</p>
+								<img src="img/event.png" alt="...">
+							</div>
+							<div class="media-body">
+								<small>h.12.00 - h.13.00</small>
+								<h4 class="media-heading">AEROBICS</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								<p><a href="#" class="btn text-uppercase">Booking</a></p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<p>26 Gen, 2014</p>
+								<img src="img/event.png" alt="...">
+							</div>
+							<div class="media-body">
+								<small>h.12.00 - h.13.00</small>
+								<h4 class="media-heading">AEROBICS</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								<p><a href="#" class="btn text-uppercase">Booking</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end next event -->
+
+				<!-- start blog -->
+				<div class="blog col-sm-12 col-md-4">
+					<h2 class="text-center text-uppercase">From The Blog</h2>
+					<div class="box-blog">
+						<div class="media">
+							<div class="media-left">
+								<a href="single-blog.html"><img src="img/blog.png" alt=".." class="img-rounded"></a>
+							</div>
+							<div class="media-body">
+								<a href="single-blog.html"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></a>
+								<p>6 May, 2013</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<a href="single-blog.html"><img src="img/blog.png" alt=".." class="img-rounded"></a>
+							</div>
+							<div class="media-body">
+								<a href="single-blog.html"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></a>
+								<p>6 May, 2013</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<a href="single-blog.html"><img src="img/blog.png" alt=".." class="img-rounded"></a>
+							</div>
+							<div class="media-body">
+								<a href="single-blog.html"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></a>
+								<p>6 May, 2013</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end Of blog -->
+			</div>
+		</section>
+		<section id="join" class="container-fluid">
+			<div class="join-holders container">
+				<div class="join-holder col-sm-7">
+					<h2 class="text-center text-uppercase">Why Join?</h2>
+					<h3 class="text-center">This is an awesome subhead</h3>
+					<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium.
+					Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
+					<a href="#" class="btn join text-uppercase">Join Today</a>
+				</div>
+				<div class="join-holder col-sm-5">
+					<h2 class="text-center text-uppercase">Already a member?</h2>
+					<h3 class="text-center">This is an awesome subhead</h3>
+					<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium.
+					Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
+					<a href="#" class="btn login text-uppercase">Log in</a>
+					<a href="#" class="btn view-calander text-uppercase"> View Calender</a>
+				</div>
+			</div>
+		</section>
+		<section id="gallrey" class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<!-- start gallery -->
+					<div class="gallrey col-sm-12 col-md-8">
+						<h2 class="text-center text-uppercase">Gallery</h2>
+				  		<div id="box-gallrey" class="carousel slide" data-ride="carousel">
+				  	    	<ol class="carousel-indicators">
+				  	        	<li data-target="#box-gallrey" data-slide-to="0" class=""></li>
+				  	        	<li data-target="#box-gallrey" data-slide-to="1" class=""></li>
+				  	        	<li data-target="#box-gallrey" data-slide-to="2" class="active"></li>
+				  	    	</ol>
+				  	    	<div class="carousel-inner">
+				  	        	<div class="item">
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-3.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+				  	        	</div>
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-2.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+				  	        	</div>
+				  	        	</div>
+				  	        	<div class="item">
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-3.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+				  	        	</div>
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-2.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+				  	        	</div>
+				  	        	</div>
+				  	        	<div class="item active">
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-3.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+				  	        	</div>
+				  	        	<div class="placeholders clearfix">
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-2.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-4.jpg" alt="..."></a>
+					  	        	<a href="#" class="gal-placehold col-xs-12 col-sm-4"><img src="img/gym-1.jpg" alt="..."></a>
+				  	        	</div>
+				  	        	</div>
+				  	    	</div>
+				  	    	<a class="left carousel-control" href="#box-gallrey" data-slide="prev">
+				  	    		<i class="fa fa-chevron-right icon-prev"></i>
+				  	    	</a>
+				  	    	<a class="right carousel-control" href="#box-gallrey" data-slide="next">
+				  	    		<i class="fa fa-chevron-right icon-next"></i>
+				  	    	</a>
+				  		</div>
+					</div>
+					<!-- end gallery -->
+
+					<!-- start partner -->
+					<div class="partner col-sm-12 col-md-4">
+						<h2 class="text-center text-uppercase">Partner</h2>
+						<div class="box-partner">
+							<ul >
+								<li><a href="#"><span class="speedo"></span></a></li>
+								<li><a href="#"><span class="nike"></span></a></li>
+								<li><a href="#"><span class="puma"></span></a></li>
+								<li><a href="#"><span class="jaked"></span></a></li>
+								<li><a href="#"><span class="reebok"></span></a></li>
+								<li><a href="#"><span class="adidas"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end partner -->
+				</div><!-- end row -->
+			</div>
+		</section>
+		<section class="container">
+			<div class="twitter-box">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><i class="fa fa-twitter fa-5x"></i></a>
+					</div>
+					<div class="media-body">
+						<p>
+							RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups.today may be big friends later. (9/10)  <u>2 days ago</u>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--start footer of page -->
+		<footer>
+			<!--  start top footer -->
+			<div class="top-footer container-fliud">
+				<div class="container contact">
+					<div class="row">
+						<div class="newsletter col-sm-6 col-md-4 clearfix">
+							<h4 class="text-uppercase">Newsletter signUP</h4>
+							<p class="text-uppercase">Sign up for our newsletter and get the latest news.</p>
+							<input type="email" placeholder="Insert Email">
+							<a href="#">Submit Email</a>
+						</div>
+						<div class="contact-info col-sm-6 col-md-4 clearfix">
+							<h1 class="clearfix"><a class="navbar-brand text-hide" href="#">GYM</a></h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p>
+							<p>phone: <strong>1-900-342-9867</strong></p>
+							<p>e-mail: <strong>info@gymsoprt.com</strong></p>
+						</div>
+						<div class="menu col-sm-6 col-md-2 clearfix">
+							<h4 class="text-uppercase">Menu</h4>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Trainers</a></li>
+								<li><a href="#">Classes</a></li>
+								<li><a href="#">Princing</a></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Contant</a></li>
+							</ul>
+						</div>
+						<div class="community col-sm-6 col-md-2 clearfix">
+							<h4 class="text-uppercase">community </h4>
+							<ul>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Forum</a></li>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Newsletter</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end top footer -->
+
+			<!-- start bottom footer -->
+			<div class="bottom-footer container-fliud">
+				<div class="container">
+					<p>&copy; 2013  GYMSports</p>
+					<ul class="list-inline">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-rss"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- end bottom footer -->
+		</footer>
+		<!-- End footer of page -->
+
+		<!-- jQuery -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

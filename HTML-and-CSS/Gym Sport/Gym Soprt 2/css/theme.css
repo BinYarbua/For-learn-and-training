@@ -1,0 +1,232 @@
+body{
+	color: #fff;
+	background-color: #f3f3f3;
+	font-size: 14px;
+}
+a{
+	color: #fff;
+}
+a:hover{
+	color: #000;
+}
+#live-rooms h2,
+.all-classes h2,
+.membership h2,
+.our-trainers h2,
+.next-event h2,
+.blog h2,
+.gallrey h2,
+.partner h2{
+	color: #65cef4;
+}
+/*
+***********************************
+* social-networks
+***********************************
+*/
+.social-networks p,
+.social-networks p a,
+.social-networks ul li a{
+	color: #fff!important;
+	background-color: #00bff0;
+}
+/*
+***********************************
+* nav-header
+***********************************
+*/
+#nav-header{
+	color: #fff;
+	background-color: #72d0f4;
+}
+#nav-header .nav>li>a,
+#nav-header .dropdown-menu li>a{
+	color: #fff;
+}
+#nav-header .nav>li>a:hover,
+#nav-header .dropdown-menu li>a:hover{
+	background:transparent;
+}
+.navbar-toggle{
+	background-color: #fff;
+}
+.navbar-toggle .icon-bar{
+	background-color: #72d0f4;
+}
+#nav-header .nav>li>a:focus,
+#nav-header .nav>li>a:active,
+#nav-header .nav>li>a.active{
+	color: #72d0f4;
+	background-color: #fff;
+	border-radius: 3px;
+}
+@media(min-width: 767px){
+	#nav-header .dropdown-menu li>a{
+		color: #72d0f4;
+	}
+	#nav-header .dropdown-menu li>a:hover{
+		color: #fff;
+		background-color: #72d0f4;
+	}
+}
+
+/*
+***********************************
+* main slier
+***********************************
+*/
+#main-carousel .carousel-caption{
+	background:rgba(40,153,196,0.5);
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next{
+	color: #fff;
+}
+/*
+***********************************
+* love room
+***********************************
+*/
+figcaption{
+	background-color: rgba(40,153,196,0.5);
+}
+figure img{
+	border-top: 6px solid #00bff0;
+	border-bottom: 6px solid #00bff0;
+}
+figcaption a.btn{
+	color: #fff;
+	border:1px solid #FFF;
+	border-radius:4px; 
+}
+/*
+***********************************
+* all classes
+***********************************
+*/
+.all-classes{
+	color: #72d0f4;
+}
+.all-classes table{
+	color: #fff;
+}
+.all-classes table td a{
+	color: #fff;
+}
+/*
+***********************************
+* membership
+***********************************
+*/
+.membership{
+	color: #72d0f4;
+}
+.box{
+	color: #fff;
+}
+/*
+***********************************
+* all classes
+***********************************
+*/
+.our-trainers{
+	color: #000;
+}
+.trainer-white,
+.basic-info ul li.facebook a,
+.basic-info ul li.twitter a,
+#box-trainers .icon-prev,
+#box-trainers .icon-next{
+	color: #72d0f4;
+}
+.trainer-blue .basic-info h4,
+.trainer-blue .basic-info ul li.facebook a,
+.trainer-blue .basic-info ul li.twitter a,
+#box-trainers .carousel-control.left,
+#box-trainers .carousel-control.right{
+	color: #fff;
+}
+.trainer-blue{
+	color: #eff4f6;
+	background-color: #72d0f4;
+}
+.trainer-white{
+	background-color: #fff;
+}
+.basic-info:first-of-type{
+	border-right: 1px solid #a9ddf1;
+}
+.trainer-white .basic-info p{
+	color: #606060;
+}
+.heart a,.like a{
+	color: #b8b8b8;
+}
+.heart :hover,.heart:focus{
+	color: #ff0000
+}
+.like a:hover .like a:focus{
+	color: #029ec6;
+}
+.basic-info ul li.facebook a,
+.basic-info ul li.twitter a{
+	background-color: transparent;
+}
+.trainer-blue .basic-info ul li.facebook a,
+.trainer-blue .basic-info ul li.twitter a{
+	background-color: transparent;
+}
+#box-trainers .carousel-control.left,
+#box-trainers .carousel-control.right{
+	color: #fff;
+	background-image: none;
+}
+/*
+***********************************
+* next-event
+***********************************
+*/
+.box-event{
+	background-color: #a5e5fe;
+}
+.box-event .media:first-child{
+	border-bottom: 1px solid #fff;
+}
+.box-event .media-body small,
+.box-event .media-body a{
+	color: #fe0000;
+}
+.box-event .media-body h4,
+.box-event .media-body p,
+.box-event .media-body a:hover{
+	color: #000;
+}
+/*
+***********************************
+* from blog
+***********************************
+*/
+.box-blog{
+	background-color: #d4d6d6;
+}
+.box-blog .media-body p span{
+	color: #000;
+}
+/*
+***********************************
+* gallrey
+***********************************
+*/
+.box-gallrey{
+	text-align: center;
+}
+#box-gallrey .icon-prev,
+#box-gallrey .icon-next{
+	color: #72d0f4;
+}
+#box-gallrey .carousel-control.left,
+#box-gallrey .carousel-control.right{
+	color: #fff;
+	background-image: none;
+	background-color: rgba(255,255,255,0.8);
+}
