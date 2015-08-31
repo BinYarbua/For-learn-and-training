@@ -1,1 +1,0 @@
-#I'm Starting read this book in 10/1/2015.  
