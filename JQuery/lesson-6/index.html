@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JQuery</title>
+		<link rel="stylesheet" type="text/css" href="css/day.css">
+	</head>
+	<body>
+	<div class="contianer">
+		<h2>Click Me</h2>
+		<h2>Click Me</h2>
+		<h2>Click Me</h2>
+		<h2>Click Me</h2>
+		<h2>Click Me</h2>
+	</div>
+		
+	</body>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		$(function() {
+			$('div.contianer').delegate('h2','click',function(){
+				console.log('Clicked');
+				$(this).clone().appendTo('.contianer');
+			});
+		});
+	</script>
+</html>

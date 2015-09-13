@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Title Page</title>
+	</head>
+	<body>
+		<dl>
+			<dt>Who is your name?</dt>
+			<dd>My name is Meshal</dd>
+			<dt>Who is your name?</dt>
+			<dd>My name is Meshal</dd>
+			<dt>Who is your name?</dt>
+			<dd>My name is Meshal</dd>
+			<dt>Who is your name?</dt>
+			<dd>My name is Meshal</dd>
+			<dt>Who is your name?</dt>
+			<dd>My name is Meshal</dd>
+		</dl>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script >
+			$(function  () {
+				$('dd').filter(':nth-child(n+4)').addClass('hide');
+				$('dl').on('mouseenter', 'dt', function(){
+					$(this)
+						.next()
+							.slideDown(200)
+							.siblings('dd')
+								.slideUp(200);
+				});
+			});
+		</script>
+	</body>
+</html>

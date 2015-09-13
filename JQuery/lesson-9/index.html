@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuey this keyword</title>
+	</head>
+	<body>
+		<a href="http://www.myarbua.set90.com">Click me</a>
+
+		<script src="js/jquery-1.11.3.js"></script>
+		<script>
+			// console.log(this); for windows object
+			var obj = {
+				doIt:function(e){
+					console.log(this);
+					e.preventDefault();
+				}
+			}
+			$('a').on('click', $.proxy(obj.doIt, obj) );
+			// function doSomeThing(e){
+			// 	e.preventDefault();
+			// 	console.log(this);
+			// }
+
+			// $('a').on('click', function(e){
+			// 	// this = anchor was chicked
+			// 	obj.doIt.call(this);
+			// 	e.preventDefault();
+			// });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JQuery</title>
+		<link rel="stylesheet" type="text/css" href="css/day.css">
+	</head>
+	<body>
+		<h1 class="text-center">Hello World</h1>
+		<button data-file="day">Day</button>
+		<button data-file="nigth">Nigth</button>
+
+		<ul class="first">
+			<li class="foo">list item 1</li>
+			<li>list item 2</li>
+			<li class="bar">list item 3</li>
+		</ul>
+		<ul class="second">
+			<li class="foo">list item 1</li>
+			<li>list item 2</li>
+			<li class="bar">list item 3</li>
+		</ul>
+	</body>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		$(function(){
+			var link = $('link');
+			$('button').on('click',function() {
+				var $this = $(this),
+					stylesheet = $this.data('file');
+				link.attr('href', 'css/' + stylesheet + '.css');
+
+				$this
+					.siblings('button')
+					.removeAttr('disabled')
+					.end()
+					.attr('disabled', 'disabled');
+			});
+			$('ul.first')
+				.find('.foo')
+				.css('background-color', 'red')
+				.end()
+				.find('.bar')
+				.css('background-color', 'blue');
+
+		});
+
+
+	</script>
+</html>
