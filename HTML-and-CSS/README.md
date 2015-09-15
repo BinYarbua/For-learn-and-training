@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-# This Folder for HTML and CSS files 
-=======
-My Name is Meshal Awedh Abd Yarbua
-form Yemen
->>>>>>> e4684d1477476f636a7e839318fd1c70d3c06640
+# Front end developer
+In this repo. contains some real static web page that build from free PSD Design to more inderstading for front end and some other concepting that deals with like: semantic markup, responsive design, HTML validated and more..  
